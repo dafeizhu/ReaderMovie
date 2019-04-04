@@ -29,9 +29,30 @@
 ### 音乐播放功能效果图
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-playmusic.PNG)
 ### 点击上半部图片正中间的音乐播放按钮，改变背景图，使用的音乐为网络的音乐流链接，该部分涉及到较多内容，这里仅作效果展示不放代码
+<br><br>
 ## 三、文章详情数据源
 ### 文章详情的数据源，是来自posts-data.js（js文件中），通过小程序的数据绑定动态地将数据绑定到其中。下边为posts-data.js中部分代码截图
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/posts-data-js.PNG)
+<br><br>
+## 四、Movie主界面
+### Movie板块中，应用得最多的便是<code>template</code>模板的嵌套使用，例如其中的星星评分组件，单个Movie的图片标题加文字的组件，都是使用了<code>template</code>模板的嵌套
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/MovieUI.PNG)
+### Movie主界面中，顶部为搜索栏，主体部分分为3部分，分别为正在热映、即将上映和豆瓣Top250。下边为其wxml代码
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-wxml.PNG)
+### 可以看到，主界面中还有一层被隐藏掉的searchPanel，它是通过<code>wx:if</code>数据绑定的方式来控制显隐的，根据业务逻辑，只有当点击使用搜索栏的时候，searchPanel才会出现。同时，我们还注意到了中间三大主体模块，均是使用<code>template</code>模板的嵌套，由传递不同的数据来展示不同的页面效果
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
