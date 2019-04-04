@@ -25,7 +25,7 @@
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-share.PNG)
 ### 点击分享按钮，屏幕底部出现选择菜单，再选择，屏幕正中间会出线对话框。下边为其实现代码
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-share-js.PNG)
-### 该功能其实实用性不强，真正要做到小程序的分享，应该使用另一个小程序自带的组件<code>wx.showShareMenu</code>
+### 该功能其实实用性不强，如果想要真正要做小程序的分享功能，应该使用另一个小程序自带的组件<code>wx.showShareMenu</code>来实现
 ### 音乐播放功能效果图
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-playmusic.PNG)
 ### 点击上半部图片正中间的音乐播放按钮，改变背景图，使用的音乐为网络的音乐流链接，该部分涉及到较多内容，这里仅作效果展示不放代码
