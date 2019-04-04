@@ -48,7 +48,8 @@
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-js-processDoubanData.PNG)
 ### 根据业务逻辑，我们需要的是该电影的名称、星星个数、评分、封面还有一个必须的，就是电影的ID，这是区分每部电影的标识
 <br><br>
-## 六、
+## 六、Movie详情界面
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-js-processDoubanData.PNG)
 
 
 
