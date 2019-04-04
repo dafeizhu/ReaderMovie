@@ -40,7 +40,15 @@
 ### Movie主界面中，顶部为搜索栏，主体部分分为3部分，分别为正在热映、即将上映和豆瓣Top250。下边为其wxml代码
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-wxml.PNG)
 ### 可以看到，主界面中还有一层被隐藏掉的searchPanel，它是通过<code>wx:if</code>数据绑定的方式来控制显隐的，根据业务逻辑，只有当点击使用搜索栏的时候，searchPanel才会出现。同时，我们还注意到了中间三大主体模块，均是使用<code>template</code>模板的嵌套，由传递不同的数据来展示不同的页面效果
-
+<br><br>
+## 五、Movie板块中的数据来源及数据的清洗筛选
+### 本项目中，Movie板块中的数据来源，均是由豆瓣官网提供的外接Api获取的，其实现是由我们用户去清洗筛选数据，选择我们需要的数据。下图为Movie主界面的js文件onLoad函数中的代码
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-js-onLoad.PNG)
+### 可以看到，因为我们主界面需要的数据，每个模块中只有3个，所以在url的最后是<code>start=0&count=3</code>用于实现仅需要的3个movie数据。下图为其数据清洗函数代码
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movies-js-processDoubanData.PNG)
+### 根据业务逻辑，我们需要的是该电影的名称、星星个数、评分、封面还有一个必须的，就是电影的ID，这是区分每部电影的标识
+<br><br>
+## 六、
 
 
 
