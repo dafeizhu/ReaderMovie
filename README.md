@@ -21,16 +21,17 @@
 ### 点击收藏按钮，屏幕正中间提示收藏成功。下边为其实现代码
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-collected-js.PNG)
 ### 该收藏功能使用的是小程序的缓存设置<code>wx.setStorageSync</code>实现的
-<br>
 ### 分享功能效果图
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-share.PNG)
 ### 点击分享按钮，屏幕底部出现选择菜单，再选择，屏幕正中间会出线对话框。下边为其实现代码
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-share-js.PNG)
 ### 该功能其实实用性不强，真正要做到小程序的分享，应该使用另一个小程序自带的组件<code>wx.showShareMenu</code>
-<br>
 ### 音乐播放功能效果图
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/post-detail-playmusic.PNG)
-### 点击上半部图片正中见的音乐播放按钮，改变背景图，使用的音乐为网络的音乐流链接，该部分涉及到较多内容，这里仅作效果展示不放代码
+### 点击上半部图片正中间的音乐播放按钮，改变背景图，使用的音乐为网络的音乐流链接，该部分涉及到较多内容，这里仅作效果展示不放代码
+## 三、文章详情数据源
+### 文章详情的数据源，是来自posts-data.js（js文件中），通过小程序的数据绑定动态地将数据绑定到其中。下边为data代码图
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/posts-data-js.PNG)
 
 
 
