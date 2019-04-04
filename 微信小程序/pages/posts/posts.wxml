@@ -1,0 +1,24 @@
+<import src="post-item/post-item-template.wxml" />
+
+<view>
+  <!-- 轮播图 -->
+  <swiper catchtap='onSwiperTap'  indicator-dots="true" autoplay='true' interval='5000'>
+    <swiper-item>
+      <image data-postId="0" src='/images/post/wx.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-postId="1" src='/images/post/vr.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-postId="2" src='/images/post/iqiyi.png'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 使用block包裹view，block用于控制属性，其中的view用于页面渲染 -->
+  <block wx:for="{{post_key}}" wx:for-item="item">
+    <view catchtap='onPostTap' data-postId="{{item.postId}}">
+      <!-- template的应用 -->
+      <template is="postItem" data="{{...item}}" />
+    </view>
+  </block>
+
+</view>

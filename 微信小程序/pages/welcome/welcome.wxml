@@ -1,0 +1,9 @@
+
+<view class='a'>
+  <image class='b' src='/images/avatar/4.png'></image>
+  <text class='c'>Hello,大肥猪</text>
+  <view class='d' bindtap='onTap'> 
+    <text class='e'>开启小程序之旅</text>
+  </view>
+
+</view>
