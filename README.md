@@ -49,10 +49,28 @@
 ### 根据业务逻辑，我们需要的是该电影的名称、星星个数、评分、封面还有一个必须的，就是电影的ID，这是区分每部电影的标识
 <br><br>
 ## 六、Movie详情界面
-
-
-
-
+### 上半部为电影的详细信息，包括贴图海报，往下走为电影的剧情简介，头部的背景图是添加了模糊效果
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movie-detail1.PNG)
+### 底部则是影人介绍的一个case，可用手指向左滑动看更多的影人信息
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/movie-detail2.PNG)
+### 详情界面中，评分的星星组件依旧是直接引用的template模板，可以看到模板的使用在本项目中体现得淋漓尽致
+<br><br>
+## 七、searchPanel界面
+### searchPanel界面的实现，我们需要先捋一捋业务逻辑。首先用户点击搜索栏，原有的三大模块隐藏，再显示搜索界面；然后，输入关键字，检索数据，再通过数据绑定的方式展示出来，这里我们又将用到template模板的应用。
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/searchPanelUI1.PNG)
+### 首先点击搜索栏，显示搜索界面，隐藏原有界面
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/searchPanelUI2.PNG)
+### 输入关键字回车，显示出搜索结果。下边我们来看下具体实现代码
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/onBindFocus.PNG)
+### 首先为光标聚焦在搜索栏时，通过小程序特有的数据绑定来控制组件显隐的方式隐藏原有界面并调出搜索界面
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/onBindBlur.PNG)
+### 然后，便是输出搜索关键字，在模拟器上回车或者点击搜索栏外的地方，执行检索
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/getMovieListData.PNG)
+### 这里的getMovieListData为上边onBindBlur函数中的一个结果回调函数，通过向豆瓣提供的Api发送request请求来获取搜索结果。下边为结果显示图
+![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/searchPanelUI2.PNG)
+### 可以看到，这里又一次使用了movie组件的template模板
+<br><br>
+## 项目总结：本项目为本人初入小程序的第一个项目，在项目中，我学习到了如何去捋清楚实现业务逻辑的顺序，体验到小程序特有的数据绑定的便捷，以及template模板文件的嵌套应用。稍显遗憾的是，本项目没有后台数据库，阅读模块的数据，仅仅是简单的使用一个js文件来当数据库存放，这个有待后期学习了如何调用数据库，再进行完善。
 
 
 
