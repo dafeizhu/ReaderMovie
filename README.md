@@ -66,9 +66,7 @@
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/onBindBlur.PNG)
 ### 然后，便是输出搜索关键字，在模拟器上回车或者点击搜索栏外的地方，执行检索
 ![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/getMovieListData.PNG)
-### 这里的getMovieListData为上边onBindBlur函数中的一个结果回调函数，通过向豆瓣提供的Api发送request请求来获取搜索结果。下边为结果显示图
-![](https://github.com/dafeizhu/ReaderMovie/blob/master/images/searchPanelUI2.PNG)
-### 可以看到，这里又一次使用了movie组件的template模板
+### 这里的getMovieListData为上边onBindBlur函数中的一个结果回调函数，通过向豆瓣提供的Api发送request请求来获取搜索结果。
 <br><br>
 ## 项目总结：本项目为本人初入小程序的第一个项目，在项目中，我学习到了如何去捋清楚实现业务逻辑的顺序，体验到小程序特有的数据绑定的便捷，以及template模板文件的嵌套应用。稍显遗憾的是，本项目没有后台数据库，阅读模块的数据，仅仅是简单的使用一个js文件来当数据库存放，这个有待后期学习了如何调用数据库，再进行完善。
 
